@@ -24,8 +24,7 @@ Author: magicpin AI Challenge Team
 BOT_URL = "http://localhost:8080"
 
 # Choose your LLM provider: "openai", "anthropic", "gemini", "deepseek", "groq", "ollama", "openrouter"
-LLM_API_KEY = "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"
-LLM_PROVIDER = "anthropic"
+LLM_API_KEY = os.getenv("LLM_API_KEY", "")LLM_PROVIDER = "anthropic"
 # Model to use (leave empty for default, or specify like "gpt-4o", "claude-3-5-sonnet-20241022", etc.)
 LLM_MODEL = ""  # <-- Optional: specify model or leave empty for default
 
